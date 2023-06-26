@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+      }
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(68, 8, 146);
+        border: 1px solid cornflowerblue;
+        margin: auto;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+      }
+      h2 {
+        text-align: center;
+        font-size: 23px;
+        color: rgb(1, 9, 2);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 150px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+      button {
+        display: block;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: rgb(68, 8, 146);
+        background-color: aqua;
+        box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        margin: 0 auto;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      .readabout {
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+        color: rgb(68, 8, 146);
+        margin-top: 12px;
+        margin-bottom: 20px;
+      }
+      .readabout:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+      }
+      .page {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>The Wanderlust Diary</h1>
+      <h2><em> In the Spotlight: The Maldives</em> ☀️ ☀️</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/701/original/maldives_3.jpeg?1677791568"
+        alt="mauritus"
+      />
+      <hr />
+      <p>
+        Floating in the Indian Ocean, The Maldives are the cream of the crop
+        when it comes to secluded beach holidays. The waters are their own brand
+        of blue, the sands are blindingly white, and rows of palm trees stand to
+        attention along the shoreline. What's more, if you count each island
+        individually, you've got almost 2,000 reasons to visit.
+      </p>
+      <a
+        href="https://www.tripadvisor.co.uk/Attractions-g293953-Activities-Maldives.html"
+        class="readabout"  target="_blank"
+        >Read about activity options in the Maldives
+      </a>
+      <button>BOOK YOUR HOLIDAY NOW</button>
+      <p class="footer">
+        <em> Website is coded by Kemi Oluwasanmi </em>
+      </p>
+    </div>
+    <script>
+      function bookNow() {
+        let name = prompt("Please enter your name");
+        let email = prompt("Please enter your email");
+        if (name.length > 0) {
+          alert("Hi " + name + "! " + "We will be in touch with you soon 👍🏽");
+        } else {
+          alert("Please reload page and enter your details again");
+        }
+      }
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", bookNow);
+    </script>
+  </body>
+</html>
